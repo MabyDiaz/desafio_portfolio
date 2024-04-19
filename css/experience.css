@@ -1,0 +1,208 @@
+/* Seccion Experiencia*/
+section.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+section.experience .experience__section__title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.experience .experience__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  gap: 64px;
+}
+
+section.experience .experience__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+section.experience .experience__box .experience__img {
+  width: 752px;
+}
+
+section.experience .experience__box .experience__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.experience .experience__list .experience__box:nth-child(odd) {
+  flex-direction: row;
+}
+
+section.experience
+  .experience__list
+  .experience__box:nth-child(odd)
+  .experience__img,
+section.experience
+  .experience__list
+  .experience__box:nth-child(even)
+  .experience__info {
+  order: 1;
+}
+
+section.experience
+  .experience__list
+  .experience__box:nth-child(odd)
+  .experience__info,
+section.experience
+  .experience__list
+  .experience__box:nth-child(even)
+  .experience__img {
+  order: 2;
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description {
+  width: 237px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description
+  .experience__repo,
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description
+  .experience__demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description
+  .experience__repo
+  .experience__botao--repo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-btn);
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description
+  .experience__demo {
+  background-color: var(--color-btn);
+}
+
+section.experience
+  .experience__list
+  .experience__box
+  .experience__info
+  .experience__description
+  .experience__demo
+  .experience__botao--demo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  section.experience {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  section.experience .experience__section__title {
+    font-size: 22px;
+  }
+
+  section.experience .experience__list {
+    width: 100%;
+  }
+
+  section.experience .experience__box {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  section.experience .experience__box .experience__img {
+    height: 320px;
+    width: 100%;
+  }
+
+  section.experience .experience__list .experience__box:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  section.experience .experience__list .experience__box:nth-child(2),
+  section.experience .experience__list .experience__box:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+  section.experience {
+    padding: 32px;
+    gap: 16px;
+  }
+
+  section.experience .experience__list {
+    padding: 0px;
+    gap: 64px;
+  }
+  section.experience .experience__list .experience__box .experience__img {
+    height: 144px;
+  }
+
+  .experience__info .experience__title {
+    font-size: 16px;
+  }
+
+  .experience__info .experience__text {
+    font-size: 14px;
+  }
+}

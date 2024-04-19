@@ -1,0 +1,58 @@
+/*Sección Menu*/
+section.menu {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.menu__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+section.menu .menu__header .menu__header img {
+  width: 24px;
+}
+
+section.menu .menu__header .menu__title {
+  font-size: 16;
+  font-weight: bold;
+}
+
+section.menu nav .menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+section.menu nav .menu__list .menu__list__item a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.menu nav .menu__list__item__contato {
+  display: none;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  section.menu {
+    padding: 16px 32px;
+  }
+
+  section.menu nav .menu__list .menu__list__item {
+    display: none;
+  }
+
+  section.menu nav .menu__list .menu__list__item__contato {
+    display: flex;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+}

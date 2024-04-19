@@ -1,0 +1,59 @@
+/*Sección About*/
+
+section.about {
+  width: 100%;
+  background-color: #eaf2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 64px;
+}
+
+.about .about__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about .about__container .about__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about .about__container .about__paragraph {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.about .about__container img {
+  width: 140px;
+  height: 52px;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .about {
+    padding: 32px;
+  }
+  .about .about__container {
+    gap: 16px;
+    padding: 0px;
+  }
+
+  .about .about__container .about__title {
+    font-size: 22px;
+  }
+
+  .about .about__container .about__paragraph {
+    font-size: 14px;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+  .about {
+    padding: 16px;
+  }
+}

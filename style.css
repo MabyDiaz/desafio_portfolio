@@ -1,0 +1,58 @@
+@import url("./css/reset.css");
+@import url("./css/menu.css");
+@import url("./css/title.css");
+@import url("./css/about.css");
+@import url("./css/skillsYHobbies.css");
+@import url("./css/academic.css");
+@import url("./css/experience.css");
+@import url("./css/contact.css");
+@import url("./css/footer.css");
+
+:root {
+  --color-btn: #2a7ae4;
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #464646;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: var(--cor-de-link);
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+.tudo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  overflow: hidden;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+  .tudo {
+    gap: 0px;
+  }
+}

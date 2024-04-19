@@ -1,0 +1,20 @@
+/*footeer*/
+section.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+section.footer .footer__rodape p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+}

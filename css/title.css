@@ -1,0 +1,100 @@
+/*Sección Title*/
+section.title {
+  width: 80%;
+  padding: 16px;
+}
+
+.title .title__div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.title .title__div .title__profile {
+  width: 368px;
+}
+
+.title .title__div .title__container {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title__container .title__bio {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.title__container .title__subsection {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.title .title__div .title__container .title__network {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.title .title__div .title__container .title__network .title__network__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.title .title__div .title__container .title__network .title__network__item a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  /* section.title {
+    width: 100%;
+  } */
+
+  .title .title__div {
+    width: 100%;
+    gap: 32px;
+    padding: 32px;
+    justify-content: center;
+  }
+
+  .title .title__div .title__profile {
+    width: 146px;
+  }
+
+  .title .title__div .title__container {
+    gap: 12px;
+  }
+
+  .title__container .title__bio {
+    font-size: 22px;
+  }
+
+  .title__container .title__subsection {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title .title__div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .title .title__div .title__container {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .title__container .title__subsection {
+    font-size: 14px;
+  }
+}
