@@ -69,6 +69,15 @@ section.academic
   .academic__courses
   .academic__courses__box
   .academic__courses__list
+  .academic__courses__item__title
+  h4 {
+  line-height: 1.5rem;
+}
+
+section.academic
+  .academic__courses
+  .academic__courses__box
+  .academic__courses__list
   .academic__courses__item__subtitle {
   font-size: 16px;
   font-weight: 500;
